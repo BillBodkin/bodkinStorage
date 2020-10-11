@@ -33,7 +33,9 @@ In the middle is the computer (or turtle). This has 16 slots and can be used as 
 
 The blocks connecting them are wires and “modems”. Which, when connected to the computer, can be programmed to move items between the different storage containers.
 
-When items are placed into the input box, they are automatically moved into the chests. If there are items of the same type in a slot that isn't yet full the items will be added to it. Else they will be moved into an empty slot. All items in the chests are tracked by a file on the computer as it is faster than checking the chests.
+The code attached is the code I wrote for the computer in game.
+
+When items are placed into the input box, they are automatically moved into the chests by the computer. If there are items of the same type in a slot that isn't yet full the items will be added to it. Else they will be moved into an empty slot. All items in the chests are tracked by a file on the computer as it is faster than checking the chests.
 
 ## Cache Files
 
