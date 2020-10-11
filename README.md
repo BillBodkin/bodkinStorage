@@ -1,5 +1,5 @@
 # Bodkin Storage
-Code for in-game computer that enables automated storage and crafting.
+[Code for in-game computer that enables automated storage and crafting](main.lua).
 
 Computer is inside Minecraft with the mods ComputerCraft ([CCTweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)) and [Plethora](https://squiddev-cc.github.io/plethora/).
 
@@ -41,7 +41,7 @@ When items are placed into the input box, they are automatically moved into the 
 
 ## Cache Files
 
-There are 2 cache files. One for [items stored](itemsStored.lua) and another for empty slots.
+There are 2 cache files. One for [items stored](itemsStored.lua) and [another for empty slots](emptySlots.lua).
 The format for the “itemsStored” file is as follows:
 
 ```
