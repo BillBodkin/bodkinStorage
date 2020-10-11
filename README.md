@@ -1,5 +1,5 @@
 # Bodkin Storage
-### Automated Storage and Crafting using ComputerCraft (CCTweaked) and Plethora.
+Automated Storage and Crafting using ComputerCraft (CCTweaked) and Plethora.
 
 
 
@@ -14,3 +14,9 @@ In the game Minecraft, one of the main mechanics is [crafting](https://minecraft
 In an unmodified copy of the game, there are close to 400 items. Keeping track of these items manually can be a task. However I was using a modified version that added many more items to the game, making inventory management into more of a chore than a fun gameplay element.
 
 One of the modifications I am using is called [CCTweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) which is a fork of a popular mod adding simple programmable computers to the game which can interact with the world around them using LUA. Using this and an [additional](https://squiddev-cc.github.io/plethora/) mod that adds more functionality to the computers, I am able to program them to move items between chests in the world.
+
+## Setup
+
+The image below shows the setup ingame for the system.
+
+![Storage system setup ingame](docs/Automated storage and crafting 1.png)
