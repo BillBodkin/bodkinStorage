@@ -60,7 +60,7 @@ Item type
                      Item chest slot 2 - count
 ```
 
-example when using a tool like a pickaxe, each time you mine a block the durability goes down by 1, and the internal dame value goes up by 1. However this value is also sometimes used to store block variants. For example the devs made different wood plank variants have the same ID as the original oak type but with different damage values.
+Damage values are used internally by the game to store the durability of an item. For example when using a tool like a pickaxe, each time you mine a block the durability goes down by 1, and the internal dame value goes up by 1. However this value is also sometimes used to store block variants. For example the devs made different wood plank variants have the same ID as the original oak type but with different damage values.
 
 Enchantments can be applied to some items in the game to give them extra abilities, for example a “efficiency” enchantment could be applied to a pickaxe to make it mine faster. Items can have multiple enchantments.
 
