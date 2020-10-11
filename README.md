@@ -124,8 +124,10 @@ rednet.send(id, {
     ["itemEnchantments"] = itemEnchantments,
 }, "bodkinStorage_1.0")
 ```
-
+id is the numeric id of the computer for the storage system.
 "main" is the name of the output box in the code.
 itemOres and itemEnchantments are tables.
 itemType, itemOres, itemDamage, itemNbtHash, itemEnchantments can be replaced with a wildcard using "\*" or by removing them from the table.
 If no enchantments are wanted, itemEnchantments can be set to "none".
+
+To count an item replace "retrive" with "count". The responce will be printed to the computer's console and broadcast on the "bodkinStorage_1.0" channel.
