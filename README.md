@@ -59,3 +59,20 @@ Item type
                      Item chest slot 1 - count
                      Item chest slot 2 - count
 ```
+
+example when using a tool like a pickaxe, each time you mine a block the durability goes down by 1, and the internal dame value goes up by 1. However this value is also sometimes used to store block variants. For example the devs made different wood plank variants have the same ID as the original oak type but with different damage values.
+
+Enchantments can be applied to some items in the game to give them extra abilities, for example a “efficiency” enchantment could be applied to a pickaxe to make it mine faster. Items can have multiple enchantments.
+
+“Ores” is a metadata added by a mod which allows the game to accept different items in a craft recipe. For example, 2 mods might add a new material like silver to the game. This mod will detect it and assign both items the string “oreSilver”. This way is a crafting recipe in one mod would usually just accept the silver from their mod, it will now accept both. Items can have multiple ores assigned.
+
+
+The other cache file defines the empty slots in the chests, it is formatted like this:
+```
+Chest 1
+    Slot 1
+    Slot 2
+Chest 2
+    Slot 1
+    Slot 2
+```
