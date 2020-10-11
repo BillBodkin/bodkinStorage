@@ -41,7 +41,7 @@ When items are placed into the input box, they are automatically moved into the 
 
 ## Cache Files
 
-There are 2 cache files. One for items stored and another for empty slots.
+There are 2 cache files. One for [items stored](itemsStored.lua) and another for empty slots.
 The format for the “itemsStored” file is as follows:
 
 ```
