@@ -19,4 +19,41 @@ One of the modifications I am using is called [CCTweaked](https://www.curseforge
 
 The image below shows the setup ingame for the system.
 
-![Storage system setup ingame](docs/Automated storage and crafting 1.png)
+![Storage system setup ingame](docs/Automated%20storage%20and%20crafting%201.png)
+
+On the left side are chests which have 54 slots used for storing items in.
+
+On the right are droppers, which are not intended for just storing items, but can be used for it with 9 slots each.
+
+The furnace is used to smelt items which is needed for some crafting recipes, it has an input and output slot as well as a slot for fuel which is consumed on use.
+
+Next to that are input and output boxes, each having 27 slots.
+
+In the middle is the computer (or turtle). This has 16 slots and can be used as a crafting bench. It also has a wireless modem on it to receive commands from other computers.
+
+The blocks connecting them are wires and “modems”. Which, when connected to the computer, can be programmed to move items between the different storage containers.
+
+When items are placed into the input box, they are automatically moved into the chests. If there are items of the same type in a slot that isn't yet full the items will be added to it. Else they will be moved into an empty slot. All items in the chests are tracked by a file on the computer as it is faster than checking the chests.
+
+## Cache Files
+
+There are 2 cache files. One for items stored and another for empty slots.
+The format for the “itemsStored” file is as follows:
+
+Item type
+    Item variants
+        Item variant 1
+            Item enchantments
+                Item enchantment 1
+                Item enchantment 2
+            Item ores
+                Item ore 1
+                Item ore 2
+            Item damage value
+            Item locations
+                Item chest 1
+                     Item chest slot 1 - count
+                     Item chest slot 2 - count
+                Item chest 2
+                     Item chest slot 1 - count
+                     Item chest slot 2 - count
