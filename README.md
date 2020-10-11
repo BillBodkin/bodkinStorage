@@ -1,5 +1,5 @@
 # Bodkin Storage
-Code for in-game computer that enables automated Storage and Crafting using ComputerCraft ([CCTweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)) and [Plethora](https://squiddev-cc.github.io/plethora/).
+Code for in-game computer that enables automated storage and crafting using ComputerCraft ([CCTweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)) and [Plethora](https://squiddev-cc.github.io/plethora/).
 
 
 
