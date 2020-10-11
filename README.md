@@ -40,6 +40,7 @@ When items are placed into the input box, they are automatically moved into the 
 There are 2 cache files. One for items stored and another for empty slots.
 The format for the “itemsStored” file is as follows:
 
+```
 Item type
     Item variants
         Item variant 1
@@ -57,3 +58,4 @@ Item type
                 Item chest 2
                      Item chest slot 1 - count
                      Item chest slot 2 - count
+```
