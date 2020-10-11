@@ -39,7 +39,7 @@ The code attached is the code I wrote for the computer in game.
 
 When items are placed into the input box, they are automatically moved into the chests by the computer. If there are items of the same type in a slot that isn't yet full the items will be added to it. Else they will be moved into an empty slot. All items in the chests are tracked by a file on the computer as it is faster than checking the chests.
 
-## Cache Files
+## Config and Cache Files
 
 There are 2 cache files. One for [items stored](itemsStored.lua) and [another for empty slots](emptySlots.lua).
 The format for the “itemsStored” file is as follows:
@@ -79,4 +79,20 @@ Chest 1
 Chest 2
     Slot 1
     Slot 2
+```
+
+
+The config file named [craftingRecipies.lua](craftingRecipies.lua) Defines all the crafting recipies the computer knows.
+An item can have multiple recipies which could be used to make it.
+A recipe first defines the items it needs to make something (materials). These items can have their metadata specified or left as a wildcard.
+
+Here is an example of a recipe defining "log" as a required material, saying what parameters need to be met fo it to be used.
+```
+["log"] = {
+    itemType = "minecraft:log",
+    itemOres = "*",
+    itemDamage = 0,
+    itemNbtHash = "*",
+    itemEnchantments = "none"
+},
 ```
