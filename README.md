@@ -86,6 +86,7 @@ The config file named [craftingRecipies.lua](craftingRecipies.lua) Defines all t
 An item can have multiple recipies which could be used to make it.
 A recipe first defines the items it needs to make something (materials). These items can have their metadata specified or left as a wildcard.
 
+
 Here is an example of a recipe defining "log" as a required material, saying what parameters need to be met fo it to be used.
 ```
 ["log"] = {
@@ -96,3 +97,35 @@ Here is an example of a recipe defining "log" as a required material, saying wha
     itemEnchantments = "none"
 },
 ```
+
+A recipe also says what "workstation" is used, for most recipies this is "bench", being the 3x3 crafting grid seen at the start. The robot has a bench / crafting table built into it.
+
+
+[maxItems.lua](maxItems.lua) Specifies how many items of a type to store before throwing out any new items of that type it recives.
+[autoOutChests.lua](autoOutChests.lua) Says what items should always be stocked in a certian out chest / out box. (There can be multiple out boxes on the system)
+[minItems.lua](minItems.lua) Is like autoOutChests.lua but specifies items that should be stocked in the internal chest bank storage. As crafting some items takes time.
+[itemOres.lua](itemOres.lua) Lists all the known ores accociated with items. This file is updated with new values as items get put into the system.
+[maxStackSizes.lua](maxStackSizes.lua) States how many of an item can be in one slot. For most items only 64 can be in a single slot, however for others items it is less. The value for each item type is updates on the file when it is put into the system via the in box.
+
+## Usage
+
+The wireless modem on the computer listens for [Rednet](https://computercraft.info/wiki/Rednet_(API)) commands.
+
+To retrive and item from the system to an output box would use the following code:
+```
+rednet.send(id, {
+    ["command"] = "retrive",
+    ["outChest"] = "main",
+    ["itemType"] = itemType,
+    ["itemCount"] = count,
+    ["itemOres"] = itemOres,
+    ["itemDamage"] = itemDamage,
+    ["itemNbtHash"] = itemNbtHash,
+    ["itemEnchantments"] = itemEnchantments,
+}, "bodkinStorage_1.0")
+```
+
+"main" is the name of the output box in the code.
+itemOres and itemEnchantments are tables.
+itemType, itemOres, itemDamage, itemNbtHash, itemEnchantments can be replaced with a wildcard using "\*" or by removing them from the table.
+If no enchantments are wanted, itemEnchantments can be set to "none".
